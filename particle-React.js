@@ -143,7 +143,15 @@ How to add particles in website?
             // partcile.js div 
                                <div style={{ position: 'absolute'}}>
                                 <Particles height="100vh" width="100vw" params={particlesConfig} />
-                              </div>                    
+                              </div>     
+      step:4=>
+                                          //                     add into index.html for hiding particle from image,div or element
+                                                 <style>
+                                                *{                                               
+                                                  z-index: 1;
+                                                }
+                                                .particle,.particlecanvas {z-index: 1! important; }
+                                              </style>
 
                     
             
