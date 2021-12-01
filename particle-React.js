@@ -17,6 +17,12 @@ How to add particles in website?
 
             src/ParticleConfig/particleConfig.js/
                                                  const particlesConfig={
+                                                  /* this is [snow] dropping style code 
+                                                   you can get many king of features here->
+                                                     1)https://vincentgarreau.com/particles.js/ + select particles style + click download
+                                                     2)convert your code json -> java-stript format
+                                                                                          follow link:  https://csvjson.com/json_beautifier */
+                                                   
                                                                                                               particles: {
                                                                                                                 number: {
                                                                                                                   value: 100,
@@ -129,5 +135,16 @@ How to add particles in website?
                                                                                                             };
 
                                                                                                           export default particlesConfig;
+       step:3=>
+            //        drop that page in which you want to apply partcile.js feature
+            //        import files 
+                              import particlesConfig from './ParticleConfig/ParticleConfig';
+                              import Particles from 'react-tsparticles';
+            // partcile.js div 
+                               <div style={{ position: 'absolute'}}>
+                                <Particles height="100vh" width="100vw" params={particlesConfig} />
+                              </div>                    
+
+                    
             
             
